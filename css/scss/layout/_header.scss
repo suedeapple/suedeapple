@@ -1,0 +1,161 @@
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 1rem 15%;
+	transition: background ease-in-out 0.3s;
+	background-color: var(--main-color);
+
+	@include below($breakpoint-desktop) {
+		padding-left: 3%;
+		padding-right: 3%;
+
+		&.sticky {
+			padding-left: 3%;
+			padding-right: 3%;
+		}
+	}
+
+	@include below($breakpoint-mobile) {
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+
+		&.sticky {
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+		}
+	}
+}
+
+.logo {
+	color: var(--text-color);
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1;
+	z-index: 10001;
+	span {
+		font-weight: bold;
+	}
+}
+
+.navbar {
+	display: flex;
+
+	li {
+		list-style: none;
+		position: relative;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	a {
+		color: var(--text-color);
+		font-weight: 500;
+		font-size: 1rem;
+	}
+
+	a::after {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 2px;
+		background: var(--text-color);
+		left: 0;
+		bottom: -4px;
+		transition: ease-in-out 0.3s;
+	}
+
+	a:hover::after {
+		width: 100%;
+	}
+
+	@include below($breakpoint-mobile) {
+		flex-direction: column;
+		margin-top: -3rem;
+
+		li {
+			display: block;
+			text-align: center;
+		}
+
+		a {
+			font-size: 2.5rem;
+		}
+
+		a::after {
+			all: unset;
+		}
+
+		a:hover::after {
+			all: unset;
+		}
+	}
+}
+
+.h-btn {
+	padding: 0 1.25rem;
+	height: 2.5rem;
+	display: inline-block;
+	line-height: 2.5rem;
+	background: var(--main-color);
+	color: var(--text-color);
+	border: none;
+	border-radius: 1.875rem;
+	font-size: 0.9em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+	z-index: 10001;
+	background: var(--text-color);
+	color: var(--main-color);
+
+	&:hover {
+		transform: translateY(-5px);
+	}
+
+	@include below($breakpoint-mobile) {
+		display: none;
+	}
+}
+
+.hamburger-btn {
+	color: var(--text-color);
+	font-size: 1.6rem;
+	cursor: pointer;
+	z-index: 10001;
+	display: none;
+
+	@include below($breakpoint-mobile) {
+		display: initial;
+	}
+}
+
+nav {
+	@include below($breakpoint-mobile) {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		background: crimson;
+		font-family: "Poppins", sans-serif;
+		padding: 1.6rem 0;
+		transition: all 0.3s ease-in-out;
+		display: grid;
+		place-items: center;
+		transform: translateX(-100%);
+
+		&.active {
+			left: 0;
+			transform: translateX(0);
+		}
+	}
+}

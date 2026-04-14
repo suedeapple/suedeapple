@@ -1,0 +1,26 @@
+.center {
+	text-align: center;
+
+	h2 {
+		font-size: var(--h2-font);
+		margin-bottom: 1rem;
+	}
+
+	p {
+		color: var(--text-second-color);
+		letter-spacing: 1px;
+		font-size: var(--p-font);
+		margin-bottom: 1.5rem;
+	}
+}
+
+.rte {
+	max-width: 90ch;
+	margin-left: auto;
+	margin-right: auto;
+	text-wrap: balance;
+}
+
+.strike-through {
+	text-decoration: line-through;
+}

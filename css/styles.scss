@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import "scss/helpers/breakpoints";
+
+:root {
+	--bg-color: #191919;
+	--second-bg-color: #101010;
+	--text-color: #fff;
+	--text-second-color: #868686;
+	--second-color: #c6c9d8bf;
+	--main-color: #dc143c;
+
+	--big-font: 5rem;
+	--h2-font: 4rem;
+	--p-font: 1.2rem;
+
+	@include below($breakpoint-desktop) {
+		--big-font: 4.6rem;
+		--h2-font: 3rem;
+		--p-font: 1.1rem;
+	}
+}
+
+@import "scss/layout/base";
+
+@import "scss/layout/header";
+@import "scss/layout/footer";
+
+@import "scss/components/about";
+@import "scss/components/services";
+@import "scss/components/work";
+@import "scss/components/clients";
+@import "scss/components/skills";
+@import "scss/components/fun";
+@import "scss/components/contact";
+
+@import "scss/components/thanks";
+
+@import "scss/utils/utilities";

@@ -1,0 +1,155 @@
+.contact {
+	background: var(--second-bg-color);
+
+	.contact-content {
+		margin: 4rem auto 3rem auto;
+		display: grid;
+		grid-template-columns: repeat(2, 2fr);
+
+		grid-gap: 6rem;
+
+		.module {
+			margin-bottom: 2rem;
+			background-color: var(--bg-color);
+			border-radius: 0.75rem;
+			padding: 2rem;
+		}
+
+		h3 {
+			margin-bottom: 1rem;
+
+			span {
+				text-decoration: line-through;
+				font-weight: 300;
+			}
+		}
+
+		h3 ~ h3 {
+			margin-bottom: 1rem;
+		}
+
+		p {
+			color: var(--text-second-color);
+		}
+
+		.rates {
+			display: block;
+			margin-bottom: 1.6rem;
+
+			li {
+				list-style: none;
+				color: var(--text-second-color);
+				margin-bottom: 0.2em;
+				padding: 0.5em 0;
+				border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+			}
+		}
+
+		p {
+			color: var(--text-second-color);
+		}
+
+		@include below($breakpoint-mobile) {
+			grid-template-columns: unset;
+		}
+	}
+
+	.contact-form {
+		background-color: var(--main-color);
+		padding: 2rem;
+		border-radius: 0.8rem;
+		form {
+			position: relative;
+			margin-top: 1rem;
+
+			input,
+			textarea {
+				width: 100%;
+				padding: 1.25rem;
+				border: none;
+				outline: none;
+				background: var(--text-color);
+				color: var(--main-color);
+				font-size: 1rem;
+				margin-bottom: 1rem;
+				border-radius: 0.8rem;
+				font-weight: 400;
+			}
+
+			input::placeholder,
+			textarea::placeholder {
+				font-family: "Poppins", sans-serif;
+				color: var(--text-second-color);
+			}
+
+			textarea {
+				resize: none;
+				height: 200px;
+				font-family: "Poppins", sans-serif;
+			}
+
+			.send {
+				display: inline-block;
+				background: var(--bg-color);
+				color: var(--text-color);
+				font-size: 1.4rem;
+				font-weight: 700;
+				border-radius: 2rem;
+				width: 200px;
+				transition: ease 0.3s;
+				text-align: center;
+				line-height: 1;
+				padding: 0;
+				height: 3rem;
+				text-transform: uppercase;
+
+				&:hover {
+					transform: translateY(-8px);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+.social-links {
+	all: unset;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 1rem;
+	background-color: rgba(24, 24, 24, 0.048);
+
+	li {
+		all: unset;
+		list-style: none;
+		display: flex;
+	}
+
+	a {
+		display: flex;
+		height: 54px;
+		width: 54px;
+
+		border-radius: 50%;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--main-color);
+		color: #fff;
+		font-size: 1.5rem;
+		transition: ease 0.3s;
+
+		@include below($breakpoint-mobile) {
+			height: 52px;
+			width: 52px;
+		}
+	}
+
+	a:hover {
+		transform: translateY(-10px);
+	}
+
+	@include below($breakpoint-mobile) {
+		gap: 0.6rem;
+	}
+}

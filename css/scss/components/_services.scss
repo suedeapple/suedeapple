@@ -1,0 +1,63 @@
+.services {
+	background: var(--bg-color);
+	pointer-events: none;
+
+	.service-content {
+		display: grid;
+		max-width: 1300px;
+		grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+		gap: 2rem;
+		align-items: center;
+		margin: 4.5rem auto 0 auto;
+
+		@include below($breakpoint-mobile) {
+			grid-template-columns: unset;
+		}
+	}
+
+	.service-card {
+		background: var(--second-bg-color);
+		padding: 3rem 2rem;
+		border-radius: 0.75rem;
+		cursor: pointer;
+		transition: all 0.35s;
+		text-align: center;
+		height: 100%;
+
+		&:hover {
+			transform: translateY(-8px);
+		}
+
+		i {
+			color: var(--main-color);
+			margin-bottom: 1.5rem;
+			font-size: 5rem;
+			text-align: center;
+		}
+
+		h3 {
+			color: var(--text-color);
+			font-size: 1.35rem;
+			font-weight: 600;
+			margin-bottom: 1rem;
+		}
+
+		P {
+			color: var(--text-second-color);
+			letter-spacing: 1px;
+			text-wrap: balance;
+
+			a i {
+				color: var(--main-color);
+				margin-bottom: 0;
+				font-size: 1rem;
+				margin-left: 1px;
+				margin-right: 1px;
+			}
+
+			a:hover i {
+				color: var(--main-color);
+			}
+		}
+	}
+}

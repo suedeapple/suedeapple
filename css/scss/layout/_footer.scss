@@ -1,0 +1,89 @@
+.footer {
+	text-align: center;
+	background: var(--main-color);
+	padding: 2rem;
+
+	p {
+		font-size: 1rem;
+		color: var(--text-color);
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+}
+
+#BackToTop {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	z-index: 999;
+
+	a {
+		display: block;
+		margin: 0;
+		padding: 0;
+		outline: 0 !important;
+		text-align: center;
+		background-color: var(--main-color);
+		color: #ffffff;
+		border-radius: 100vmax;
+		opacity: 0.95;
+		transition:
+			transform 0.2s ease-in-out,
+			opacity 0.2s ease-in-out;
+	}
+
+	a:hover {
+		transform: translateY(-4px);
+		opacity: 1;
+	}
+
+	a .fa {
+		font-size: 24px;
+		line-height: 40px;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+	}
+
+	@include below($breakpoint-backtotop) {
+		right: 0.75rem;
+		bottom: 0.75rem;
+
+		a {
+			font-size: 20px;
+			height: 40px;
+			width: 40px;
+		}
+	}
+
+	@include above($breakpoint-backtotop + 1px) {
+		a {
+			font-size: 20px;
+			height: 40px;
+			width: 40px;
+			outline: 0 !important;
+		}
+	}
+}
+
+@supports (animation-timeline: scroll(root block)) {
+	#BackToTop {
+		opacity: 0;
+		transform: translateY(10px);
+		animation: backtotop-reveal 1s linear both;
+		animation-timeline: scroll(root block);
+		animation-range: 800px 900px;
+	}
+}
+
+@keyframes backtotop-reveal {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
