@@ -118,6 +118,14 @@
 			margin-bottom: 1.25rem;
 			line-height: 1.1;
 			text-wrap: pretty;
+
+			span {
+				text-decoration-line: underline;
+				text-decoration-thickness: 5px;
+				text-decoration-style: wavy;
+				text-underline-offset: 6px;
+				text-decoration-color: #d5003b;
+			}
 		}
 
 		p {
