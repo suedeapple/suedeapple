@@ -23,13 +23,11 @@ css/
 js/
   main.js              # JS entry point (GSAP, Lenis, Typed.js logic)
 public/
+  favicon.png
   img/
     logos/             # Client logos (SVG)
     work/              # Portfolio project images (WebP)
     me/                # Profile images
-  apple-touch-icon.png # Favicons — add these to public/ if not present
-  favicon-*.png
-  site.webmanifest
 dist/                  # Vite build output (gitignored)
 ```
 
