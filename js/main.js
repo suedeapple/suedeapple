@@ -1,4 +1,7 @@
+import { inject } from '@vercel/analytics'
 import gsap from 'gsap'
+
+inject()
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
 import Typed from 'typed.js'
