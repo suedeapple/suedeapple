@@ -4,9 +4,9 @@ Personal portfolio website for Paul Wright — Certified Umbraco Master Develope
 
 ## Tech Stack
 
-- **HTML5** – `index.html` (main), `thanks/index.html` (post-form thank-you)
-- **SCSS** – source in `css/styles.scss` and partials under `css/scss/`
-- **JavaScript** – source in `js/main.js` (main page), `js/thanks.js` (thank-you page)
+- **HTML5** — `index.html` (main), `thanks/index.html` (post-form thank-you)
+- **SCSS** — source in `css/styles.scss` and partials under `css/scss/`
+- **JavaScript** — source in `js/main.js`
 - **Libraries:** GSAP (scroll animations), Typed.js (typewriter effect), Lenis (smooth scrolling), FontAwesome (icons via CDN)
 - **Build tool:** Vite
 
@@ -18,41 +18,39 @@ thanks/index.html      # Thank-you page after contact form submission
 vite.config.js         # Vite config (multi-page, SCSS)
 package.json
 css/
-  styles.scss          # SCSS source (entry point)
-  scss/                # SCSS partials
+  styles.scss          # SCSS entry point
+  scss/                # SCSS partials (layout, components, helpers, utils)
 js/
-  main.js              # Main JS entry (imports SCSS + scripts logic)
-  thanks.js            # Thanks page entry (imports SCSS only)
-img/
-  logos/               # Client logos (SVG)
-  work/                # Portfolio project images (WebP)
-  me/                  # Profile images
-public/                # Static assets served at root (favicons, site.webmanifest)
+  main.js              # JS entry point (GSAP, Lenis, Typed.js logic)
+public/
+  img/
+    logos/             # Client logos (SVG)
+    work/              # Portfolio project images (WebP)
+    me/                # Profile images
+  apple-touch-icon.png # Favicons — add these to public/ if not present
+  favicon-*.png
+  site.webmanifest
 dist/                  # Vite build output (gitignored)
 ```
 
-## Build / Compilation
+## Build
 
-Vite project. Install dependencies and use the standard scripts:
-
-```
+```bash
 npm install
-npm run dev      # local dev server at http://localhost:5173
-npm run build    # outputs to dist/
-npm run preview  # preview the dist/ build locally
+npm run dev      # dev server at http://localhost:5173
+npm run build    # production build to dist/
+npm run preview  # preview dist/ locally
 ```
 
-When making CSS/JS changes, edit the source files (`css/styles.scss`, `css/scss/**`, `js/main.js`). Vite handles compilation.
+Edit source files (`css/styles.scss`, `css/scss/**`, `js/main.js`) — Vite handles compilation. Never edit `dist/` directly.
+
+## CSS / FOUC
+
+The SCSS is referenced as a `<link>` in `<head>` (not imported via JS) so the browser loads it as a blocking stylesheet, preventing flash of unstyled content. Keep it this way.
 
 ## Deployment
 
-Hosted on Vercel. Vercel auto-detects Vite and runs `vite build` with `dist/` as the output directory.
-
-**Recommended:** connect the GitHub repo to Vercel via the dashboard — it will auto-deploy on every push to `main`, no GitHub Action needed.
-
-**GitHub Action (`.github/workflows/deploy.yml`):** if you prefer CI-based deployment, set three repo secrets — `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID` — from your Vercel project settings.
-
-Favicon files (`apple-touch-icon.png`, `favicon-*.png`, `site.webmanifest`) should be placed in the `public/` directory so Vercel serves them at the root path.
+Hosted on Vercel. Connect the GitHub repo in the Vercel dashboard — auto-deploys on every push to `main`. No config file needed; Vercel auto-detects Vite with `dist/` as output.
 
 ## Testing
 
