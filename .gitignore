@@ -2,3 +2,5 @@
 .claude/
 web.config
 *.tmp.*
+node_modules/
+dist/

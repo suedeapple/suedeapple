@@ -18,10 +18,10 @@
 			content="Umbraco developer, Certified Umbraco Master, ASP.NET developer, freelance web developer, website designer, Lancashire, Manchester, remote developer, Paul Wright, suedeapple"
 		/>
 
-		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-		<link rel="manifest" href="site.webmanifest" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
 
 		<link rel="canonical" href="https://www.suedeapple.co.uk" />
 
@@ -70,13 +70,14 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link rel="preconnect" href="https://cdn.jsdelivr.net" />
-		<link rel="stylesheet" type="text/css" href="css/styles.min.css" />
 
+		<link rel="stylesheet" href="/css/styles.scss" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"
 		/>
+
+		<script type="module" src="/js/main.js"></script>
 	</head>
 	<body id="top">
 		<header>
@@ -108,7 +109,7 @@
 				<div class="about-img">
 					<div class="about-card">
 						<img
-							src="img/me/paul-wright-suedeapple.jpg"
+							src="/img/me/paul-wright-suedeapple.jpg"
 							alt="Paul Wright - Umbraco Developer"
 						/>
 
@@ -234,7 +235,7 @@
 					<div class="work-card">
 						<a href="http://www.imocarwash.com" target="_blank">
 							<div class="work-image">
-								<img src="img/work/imo-car-wash.webp" alt="iMo Car Wash" />
+								<img src="/img/work/imo-car-wash.webp" alt="iMo Car Wash" />
 								<i class="fa-solid fa-arrow-up-right-from-square"></i>
 							</div>
 						</a>
@@ -266,7 +267,7 @@
 					<div class="work-card">
 						<a href="http://www.poundbakery.co.uk" target="_blank">
 							<div class="work-image">
-								<img src="img/work/pound-bakery.webp" alt="Pound Bakery" />
+								<img src="/img/work/pound-bakery.webp" alt="Pound Bakery" />
 								<i class="fa-solid fa-arrow-up-right-from-square"></i>
 							</div>
 						</a>
@@ -293,7 +294,7 @@
 					<div class="work-card">
 						<a href="https://www.nkc-nutrition.com/" target="_blank">
 							<div class="work-image">
-								<img src="img/work/nkc-nutrition.webp" alt="NKC Nutrition" />
+								<img src="/img/work/nkc-nutrition.webp" alt="NKC Nutrition" />
 								<i class="fa-solid fa-arrow-up-right-from-square"></i>
 							</div>
 						</a>
@@ -318,7 +319,7 @@
 					<div class="work-card">
 						<a href="https://www.ketelone.com/" target="_blank">
 							<div class="work-image">
-								<img src="img/work/ketel-one.webp" alt="Ketel One" />
+								<img src="/img/work/ketel-one.webp" alt="Ketel One" />
 								<i class="fa-solid fa-arrow-up-right-from-square"></i>
 							</div>
 						</a>
@@ -342,7 +343,7 @@
 						<a href="https://www.togetherscotland.org.uk/" target="_blank">
 							<div class="work-image">
 								<img
-									src="img/work/scotland-together.webp"
+									src="/img/work/scotland-together.webp"
 									alt="Together Scotland"
 								/>
 								<i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -370,7 +371,7 @@
 					<div class="work-card">
 						<a href="https://www.mark-riley.co.uk/" target="_blank">
 							<div class="work-image">
-								<img src="img/work/mark-riley.webp" alt="Mark Riley" />
+								<img src="/img/work/mark-riley.webp" alt="Mark Riley" />
 								<i class="fa-solid fa-arrow-up-right-from-square"></i>
 							</div>
 						</a>
@@ -397,7 +398,7 @@
 					<div class="work-card">
 						<a href="https://www.beaniefriends.com" target="_blank">
 							<div class="work-image">
-								<img src="img/work/beanie-friends.webp" alt="Beanie Friends" />
+								<img src="/img/work/beanie-friends.webp" alt="Beanie Friends" />
 								<i class="fa-solid fa-arrow-up-right-from-square"></i>
 							</div>
 						</a>
@@ -421,7 +422,7 @@
 					<div class="work-card">
 						<a href="https://www.csswind.com" target="_blank">
 							<div class="work-image">
-								<img src="img/work/csswind.webp" alt="csswind" />
+								<img src="/img/work/csswind.webp" alt="csswind" />
 								<i class="fa-solid fa-arrow-up-right-from-square"></i>
 							</div>
 						</a>
@@ -445,7 +446,7 @@
 						<a href="https://sage-gateshead.vercel.app" target="_blank">
 							<div class="work-image">
 								<img
-									src="img/work/sage-gateshead.webp"
+									src="/img/work/sage-gateshead.webp"
 									alt="Changes - Sage Gateshead"
 								/>
 								<i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -487,72 +488,72 @@
 
 				<div class="client-content">
 					<div class="client-card">
-						<img src="img/logos/pimms.svg" alt="pimms" class="limit" />
+						<img src="/img/logos/pimms.svg" alt="pimms" class="limit" />
 					</div>
 
 					<div class="client-card">
 						<img
-							src="img/logos/caravan-and-motorhome-club.svg"
+							src="/img/logos/caravan-and-motorhome-club.svg"
 							alt="caravan and motorhome club"
 							class="limit-height"
 						/>
 					</div>
 					<div class="client-card">
-						<img src="img/logos/diageo.svg" alt="diageo" />
+						<img src="/img/logos/diageo.svg" alt="diageo" />
 					</div>
 					<div class="client-card">
 						<img
-							src="img/logos/guitar-interactive-magazine.svg"
+							src="/img/logos/guitar-interactive-magazine.svg"
 							alt="guitar interactive magazine"
 						/>
 					</div>
 					<div class="client-card">
-						<img src="img/logos/imo-carwash.svg" alt="IMO Car Wash" />
+						<img src="/img/logos/imo-carwash.svg" alt="IMO Car Wash" />
 					</div>
 					<div class="client-card">
-						<img src="img/logos/hoyer.svg" alt="hoyer" />
+						<img src="/img/logos/hoyer.svg" alt="hoyer" />
 					</div>
 					<div class="client-card">
 						<img
-							src="img/logos/ketelone.svg"
+							src="/img/logos/ketelone.svg"
 							alt="ketelone"
 							class="limit-height"
 						/>
 					</div>
 					<div class="client-card">
 						<img
-							src="img/logos/bury-college.svg"
+							src="/img/logos/bury-college.svg"
 							alt="bury college"
 							class="limit"
 						/>
 					</div>
 					<div class="client-card">
-						<img src="img/logos/nhs.svg" alt="nhs" class="limit-height" />
+						<img src="/img/logos/nhs.svg" alt="nhs" class="limit-height" />
 					</div>
 					<div class="client-card">
-						<img src="img/logos/bodycare.svg" alt="bodycare" />
+						<img src="/img/logos/bodycare.svg" alt="bodycare" />
 					</div>
 					<div class="client-card">
-						<img src="img/logos/poundbakery.svg" alt="poundbakery" />
+						<img src="/img/logos/poundbakery.svg" alt="poundbakery" />
 					</div>
 					<div class="client-card">
-						<img src="img/logos/salford.svg" alt="salford" />
+						<img src="/img/logos/salford.svg" alt="salford" />
 					</div>
 					<div class="client-card">
-						<img src="img/logos/spar.svg" alt="spar" />
+						<img src="/img/logos/spar.svg" alt="spar" />
 					</div>
 					<div class="client-card">
-						<img src="img/logos/tanqueray.svg" alt="tanqueray" />
+						<img src="/img/logos/tanqueray.svg" alt="tanqueray" />
 					</div>
 					<div class="client-card">
 						<img
-							src="img/logos/vodafone.svg"
+							src="/img/logos/vodafone.svg"
 							alt="vodafone"
 							class="limit-height"
 						/>
 					</div>
 					<div class="client-card">
-						<img src="img/logos/flutter.svg" alt="flutter" />
+						<img src="/img/logos/flutter.svg" alt="flutter" />
 					</div>
 				</div>
 			</section>
@@ -974,13 +975,5 @@
 				<i class="fa fa-angle-up" aria-label="top"></i>
 			</a>
 		</span>
-
-		<!-- TODO : Normally I would bundle all this up :) -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
-		<script src="https://unpkg.com/lenis@1.3.14/dist/lenis.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-		<script type="text/javascript" src="js/scripts.min.js?v=3.2"></script>
 	</body>
 </html>
