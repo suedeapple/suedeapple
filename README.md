@@ -1,16 +1,29 @@
-## Hi there 👋
+# Hi, I'm Paul 👋
 
-<!--
-**suedeapple/suedeapple** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Umbraco Developer from Burnley Lancashire, UK
 
-Here are some ideas to get you started:
+I build websites, integrations, and custom tools using Umbraco, .NET, React, and Next.js.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 Tech Stack
+
+- Umbraco CMS
+- C# / .NET
+- REST APIs
+- React & Next.js
+- JavaScript / TypeScript
+- CSS
+- GSAP
+
+
+## 🌱 Currently Exploring
+
+- Umbraco 17
+- Umbraco.AI
+- Headless CMS architecture
+- GSAP
+
+## 📫 Connect With Me
+
+- LinkedIn - www.linkedin.com/in/suedeapple
+- Portfolio - www.suedeaple.co.uk
+- CodePen - https://codepen.io/suedeapple
