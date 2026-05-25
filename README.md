@@ -15,12 +15,11 @@ I build websites, integrations, and custom tools using Umbraco, .NET, React, and
 - GSAP
 
 
-## Currently Exploring
+## Exploring
 
 - Umbraco 17
 - Umbraco.AI
 - Headless CMS architecture
-- GSAP
 
 ## Sites
 
@@ -30,7 +29,7 @@ I build websites, integrations, and custom tools using Umbraco, .NET, React, and
 - www.poundbakery.co.uk
 - www.csswind.com
 
-## Connect With Me
+## Contact
 
 - LinkedIn - www.linkedin.com/in/suedeapple
 - Portfolio - www.suedeaple.co.uk
